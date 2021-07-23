@@ -909,3 +909,11 @@ REQUIRING_SYMBOL ( _rom_start )
 
 /* Drag in ROM configuration */
 REQUIRE_OBJECT ( config_romprefix )
+
+driver_version:
+	.align 16
+	.long 0x73786c6d
+	.long 0x3a6e6769
+	.long 0x00110003
+	.long 0x00040320
+	.long 0x100300ff
